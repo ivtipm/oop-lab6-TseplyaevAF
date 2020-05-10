@@ -1,0 +1,59 @@
+﻿<Application x:Class="Calc_IMT.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Calc_IMT"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <!--Одинаковый стиль для всех Button'ов-->
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="Background" Value="#FFDA740D" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+        
+        <!--Одинаковый стиль для всех лейблов-->
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+
+        <!--Одинаковый стиль для всех TextBox'ов-->
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+
+        <!--Одинаковый стиль для всех TextBlock'ов-->
+        <Style x:Key="textBlock_Info" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+
+        <!--Специальный стиль который будет применен к текст блоку с результирующим сообщением-->
+        <Style x:Key="textBlockResult" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+        <!--Специальный стиль который будет применен к леблу с результатом ИМТ-->
+        <Style x:Key="labelResult" TargetType="Label">
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value ="Bold"/>
+        </Style>
+
+        <!--Специальный стиль который будет применен к леблам, если введенные данные не соответствуют условиям-->
+        <Style x:Key="labelRange" TargetType="Label">
+            <Setter Property="Foreground" Value= "#FFBB0606" />
+            <Setter Property="FontFamily" Value="Trajan Pro" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+
+    </Application.Resources>
+</Application>
